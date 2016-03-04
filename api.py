@@ -2,7 +2,6 @@ from flask import Flask
 import RPi.GPIO
 
 
-
 RPi.GPIO.setmode(RPi.GPIO.BOARD)
 
 RPi.GPIO.setup(8,RPi.GPIO.OUT)
@@ -30,5 +29,5 @@ def high():
 
 
 if __name__ == '__main__':
-    app.run(host='192.168.1.20', port=5000, debug=True)
+    app.run(debug=True)
 
